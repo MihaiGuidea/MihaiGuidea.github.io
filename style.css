@@ -5,19 +5,21 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, #ff1f1f, #eba422);
-    color: white;
-    font-family: 'Poppins', sans-serif;
+    background-image: url("1.jpg");
+    background-size: 100%;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     min-height: 100vh;
 }
 
 header {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    color: white;
 }
 
 header,
 form {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,14 +34,14 @@ form button {
 }
 
 form button {
-    color: #ff0000;
+    color: #e4a14a;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover {
-    background: #ff0000;
+    background: #e4a14a;
     color: white;
 }
 
@@ -62,7 +64,7 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .todo li {
@@ -71,7 +73,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-    background: #ff0000;
+    background: #ff0800;
     color: white;
     border: none;
     padding: 1rem;
@@ -94,11 +96,11 @@ form button:hover {
 
 .completed {
     text-decoration: line-through;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 
 .fall {
-    transform: translateY(8rem) rotateZ(20deg);
+    transform: translateY(8rem) rotateZ(30deg);
     opacity: 0;
 }
 
@@ -117,16 +119,18 @@ select {
 }
 
 select {
-    color: #ff0000;
+    color: #e4a14a;
     width: 10rem;
     cursor: pointer;
     padding: 0.9rem;
+    text-decoration-color: black;
 }
 
 .select::after {
     content: "\25BC";
     position: absolute;
-    background: #ff0000;
+    background: #e4a14a;
+    color: white;
     top: 0;
     right: 0;
     padding: 1rem;
@@ -136,5 +140,5 @@ select {
 
 .select:hover::after {
     background: white;
-    color: #ff0000;
+    color: #e4a14a;
 }

@@ -1,2 +1,1 @@
-My own version of a to do list using HTML, CSS, and Vanilla Javascript.
-More description to follow
+My own version of a to do list using HTML, CSS, and Vanilla Javascript
